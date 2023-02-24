@@ -1,0 +1,50 @@
+#circle{
+    border: 10px solid;
+    width: 500px;
+    height: 500px;
+    background: red;
+    border-radius: 50%;
+    position: relative;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+}
+
+#square{
+    width: 100px;
+    height: 100px;
+    background: blueviolet;
+    position: absolute;
+    left: 40%;
+    top: 40%;
+    animation: 4s ease-in-out 0s infinite running spin;
+}
+
+#select{
+    width: 0;
+    height: 0;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-top: 50px solid rgb(0, 255, 21);
+    margin: auto;
+}
+
+#spinbutton{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+    background-color: lightblue;
+    font-size: 15px;
+    box-shadow: 0 4px #353535;
+}
+
+
+
+@keyframes spin{
+    100% {transform: rotate(360deg);}
+}
