@@ -4,28 +4,152 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Practice Page</title>
+    <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dongle&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7be1c78344.js" crossorigin="anonymous"></script>
+    <script defer src="index.js"></script>
 </head>
-<body style="background-color: #0082be;">
-        
-    <div id="select"></div>
-    <div id="circle">
-        <div id="square"></div>
+<body style="background-color: rgb(204, 103, 255);">
+
+    <div id="background">
+    <div id="gradient"></div>
+
+        <div id="container">
+            <div id="headerContainer" class="text">
+                <div id="headerTextContainer">
+                    <h1 id="myName">Work With Me</h1>
+                    <div id="subHeaderContainer" class="text">
+                        <h2>I'm Danny, A FrontEnd Developer <br>
+                        </h2>
+                        <div id="subSubText">
+                            <h3>A FrontEnd Developer utilizing experience to create any high end design you wish.
+                            <br>I am eager to explore opportunities for collaboration and look forward to working together in the future.
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="imageContainer">
+                <div id="imageBack">
+                    <img id="myPhoto" src="me!.png" alt="metoo!.webp">
+                </div>
+            </div>
+
+            <div id="topBar" class="topBarClass">
+                <div id="homeDivSelected" class="topBarText">
+                    <h1>Home</h1>
+                </div>
+                <div id="aboutDiv" class="topBarText">
+                    <h1><a class="jumpBtn" href="#aboutSection">About</a></h1>
+                </div>
+                <div id="skillDiv" class="topBarText">
+                    <h1><a class="jumpBtn" href="#skillSection">Skills</a></h1>
+                </div>
+                <div id="contactDiv" class="topBarText">
+                    <h1>Contact Me</h1>
+                </div>
+            </div>
+
+            <div id="sideBar">
+                <div id="linkedInIconDiv">
+                    <a id="linkedInLink" target="_blank" href="https://www.linkedin.com/in/christopher-coe-308b19264/"><i id="linkedInIcon" class="fa-brands fa-linkedin-in" title="LinkedIn"></i></a>
+                </div>
+                <div id="lightDark">
+                    <button id="colorBtn" title="Light/Dark Mode"><i class="fa-regular fa-moon"></i></button>
+                </div>
+            </div>
+
+            <div id="scroll" class="text">Scroll Down</div>
+
+        </div>
+
+        <div id="aboutSection" class="hidden">
+            <div id="topBarNoAnim" class="topBarClass">
+                <div id="homeDiv" class="topBarText">
+                    <h1><a class="jumpBtn" href="#">Home</a></h1>
+                </div>
+                <div id="aboutDivSelected" class="topBarText">
+                    <h1>About</h1>
+                </div>
+                <div id="skillDiv" class="topBarText">
+                    <h1><a class="jumpBtn" href="#skillSection">Skills</a></h1>
+                </div>
+                <div id="contactDiv" class="topBarText">
+                    <h1>Contact Me</h1>
+                </div>
+            </div>
+
+            <div id="subContainer">
+                <div id="aboutMe" class="about">
+                    <h1 class="aboutHeader">About Me</h1>
+                    <h3>I'm Danny, and I'm a German residing in the United States. I have a passion for software engineering
+                    and am captivated by the amazing ability to bring about new creations to life through this field.</h3>
+                </div>
+                <div id="aboutGoals" class="about">
+                    <h1 class="aboutHeader">About My Goals</h1>
+                    <h3>My aspirations are to create appealing web pages for a wide audience to see. 
+                        I have plans to make a transition to full-stack development 
+                    <br>in the near future.</h3>
+                </div>
+                <div id="aboutBackground" class="about">
+                    <h1 class="aboutHeader">About My Background</h1>
+                    <h3>Growing up with immigrant parents taught me a lot about hard work and determination. 
+                    <br> Even when faced with challenges that seem insurmountable, you keep going no matter what.
+                    </h3>
+                </div>
+                <div id="aboutEthic" class="about">
+                    <h1 class="aboutHeader">About My Ethics</h1>
+                    <h3>I take pride in my work, and aim to deliver high-quality web pages to the best of my abilities.
+                    <br>Efficiency and productivity is key, time is valuable and limited and deadlines are as well.</h3>
+                </div>
+            </div>
+        </div>
+
+        <div id="skillSection" class="hidden">
+            <div id="topBarNoAnim2" class="topBarClass">
+                <div id="homeDiv" class="topBarText">
+                    <h1><a class="jumpBtn" href="#">Home</a></h1>
+                </div>
+                <div id="aboutDiv" class="topBarText">
+                    <h1><a class="jumpBtn" href="#aboutSection">About</a></h1>
+                </div>
+                <div id="skillDivSelected" class="topBarText">
+                    <h1>Skills</h1>
+                </div>
+                <div id="contactDiv" class="topBarText">
+                    <h1>Contact Me</h1>
+                </div>
+            </div>
+
+            <div class="skillDivs">
+                <div class="skillimg"><img class="pli" src="jsimg.png" alt="jsimg.webp"></div>
+                <div class="skilltext"><h2>Added functionality to my sites, like this one, having added an observer to animate different sections
+                flowing into view! As well as changing color on screen.</h2></div>
+            </div>
+            <div class="skillDivs">
+                <div class="skillimg"><img class="pli" src="htmlimg.png" alt="htmlimg.webp"></div>
+                <div class="skilltext"><h2>Html, the structre and layout of a website.</h2></div>
+            </div>
+            <div class="skillDivs">
+                <div class="skillimg"><img class="pli" src="cssimg.png" alt="cssimg.webp"></div>
+                <div class="skilltext"><h2>The animator and styler. Recommended to stay organized.</h2></div>
+            </div>
+            <div class="skillDivs">
+                <div class="skillimg"><img class="pli" src="pythonimg.png" alt="pythonimg.webp"></div>
+                <div class="skilltext"><h2>Through practice, my fundamentals are good for Python.</h2></div>
+            </div>
+            <div class="skillDivs">
+                <div class="skillimg"><img class="pli" src="c++img.png" alt="c++img.webp"></div>
+                <div class="skilltext"><h2>The most complex one that I only have a touch of experience with.</h2></div>
+            </div>
+
     </div>
-
-    <button type="button" id="spinbutton">SPIN!</button>
-
     <script src="index.js"></script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
 
