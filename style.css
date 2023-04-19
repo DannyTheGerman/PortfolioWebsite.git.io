@@ -13,6 +13,16 @@ of kraft cheddar cheese, 2/5 cup of milk, regular mushrooms sliced in HALFS to b
     text-decoration: none;
 }
 
+#contactDiv:link{
+    color: rgb(247, 240, 255);
+    text-decoration: none;
+}
+
+#contactDiv:visited{
+    color: rgb(247, 240, 255);
+    text-decoration: none;
+}
+
 .hidden{
     opacity: 0;
     -webkit-filter: blur(15px);
@@ -177,6 +187,7 @@ of kraft cheddar cheese, 2/5 cup of milk, regular mushrooms sliced in HALFS to b
 #contactDiv{
     -webkit-animation: textSlide 1s ease-out 5.5s 1 backwards;
             animation: textSlide 1s ease-out 5.5s 1 backwards;
+
 }
 
 #sideBar{
@@ -445,29 +456,6 @@ of kraft cheddar cheese, 2/5 cup of milk, regular mushrooms sliced in HALFS to b
     left: 5%;
     right: 5%;
 }
-
-/*
-.skillDivs:nth-child(1){
-    
-}
-
-.skillDivs:nth-child(2){
-    
-}
-
-.skillDivs:nth-child(3){
-    
-}
-
-.skillDivs:nth-child(4){
-    
-}
-
-.skillDivs:nth-child(5){
-    
-}
-
-*/
 
 .pli{
     position: relative;
